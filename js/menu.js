@@ -1,5 +1,5 @@
 //  Target the hamburger menu icon
-const hamburger = document.querySelector('#hamburger');
+const hamburger = document.querySelector('#hamburgers');
 //  Target the close button
 const btn = document.querySelector('#close-btn');
 //  Target the modal menu

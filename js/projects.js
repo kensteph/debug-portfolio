@@ -75,8 +75,6 @@ const createLiChildren = (ul, project, section) => {
 
   return ul;
 };
-  //  Get the works section
-const workSection = document.querySelector('#works');
 
 //  Dynamically create the cards
 projects.forEach((project, projectPos) => {
@@ -134,7 +132,7 @@ projects.forEach((project, projectPos) => {
   // Create button
   const seeBtn = document.createElement('button');
   seeBtn.className = 'see-project-btn';
-  seeBtn.id = projectPos;
+  seeBtn.id = projectPos+1;
   seeBtn.type = 'button';
   seeBtn.textContent = 'See Project';
   // Add H2 to divProjectDesc
@@ -148,6 +146,10 @@ projects.forEach((project, projectPos) => {
   // Add the card
   workSection.appendChild(divCard);
 });
+
+  //  Get the works section
+  const workSection = document.querySelector('#works');
+
 
 // Traget the elements
 const seeProjectBtns = document.querySelectorAll('.see-project-btn');

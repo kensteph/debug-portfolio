@@ -48,7 +48,7 @@ const saveUserData = () => {
   const uEmail = email.value;
   const uMessage = message.value;
   const data = { name: uName, email: uEmail, message: uMessage };
-  localStorage.setItem('userData', JSON.stringify(data));
+  localStorage.setItem('userData',data);
 };
 
 // Add event on each field
